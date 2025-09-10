@@ -1,0 +1,25 @@
+title : My first Jekyll site
+author : 
+  name : Lyla McGovern
+  email : lbmcgo25@stlawu.edu
+  github : lylamcgovern
+
+url: "https://lylamcgovern.github.io" # the base hostname & protocol for your site
+baseurl: "/jekyll-example" # the subpath of your site, e.g. /repositoryname
+
+remote_theme: mmistakes/minimal-mistakes@4.27.3
+
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+plugins:
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-include-cache # needed for minimal-mistakes
